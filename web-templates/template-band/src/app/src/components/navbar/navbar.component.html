@@ -1,3 +1,14 @@
 <mat-toolbar>
-    <span>My Application</span>
+    <button mat-button>HOME</button>
+    <button mat-button>BAND</button>
+    <button mat-button>TOUR</button>
+    <button mat-button>CONTENT</button>
+    <button mat-button [matMenuTriggerFor]="menu">MORE <mat-icon>arrow_drop_down</mat-icon></button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item>Merchadise</button>
+        <button mat-menu-item>Extra</button>
+        <button mat-menu-item>Media</button>
+    </mat-menu>
+    <span class="fill-space"></span>
+    <mat-icon class="icon" aria-hidden="false" aria-label="search">search</mat-icon>
 </mat-toolbar>
