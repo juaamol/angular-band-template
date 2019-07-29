@@ -1,9 +1,9 @@
 <mat-toolbar>
-    <button mat-button>HOME</button>
-    <button mat-button>BAND</button>
-    <button mat-button>TOUR</button>
-    <button mat-button>CONTENT</button>
-    <button mat-button [matMenuTriggerFor]="menu">MORE <mat-icon>arrow_drop_down</mat-icon></button>
+    <a class="active">HOME</a>
+    <a>BAND</a>
+    <a>TOUR</a>
+    <a>CONTENT</a>
+    <a [matMenuTriggerFor]="menu">MORE <mat-icon>arrow_drop_down</mat-icon></a>
     <mat-menu #menu="matMenu">
         <button mat-menu-item>Merchadise</button>
         <button mat-menu-item>Extra</button>

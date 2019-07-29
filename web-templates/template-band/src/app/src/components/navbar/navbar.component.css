@@ -10,3 +10,16 @@ mat-toolbar {
     background-color: #000;
     color: #fff;
 }
+
+mat-toolbar a {
+    text-align: center;
+    padding: 12px 24px;
+    box-sizing: border-box;
+    cursor: default;
+}
+
+mat-toolbar a:hover,
+mat-toolbar a.active {
+    background-color: #ccc;
+    color: #000;
+}

@@ -7,13 +7,15 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { NavbarComponent } from './src/components/navbar/navbar.component';
 import { MatMenuModule } from '@angular/material/menu';
+import { CarouselComponent } from './src/components/carousel/carousel.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
