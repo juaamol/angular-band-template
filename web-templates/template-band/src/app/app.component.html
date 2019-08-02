@@ -1,1 +1,8 @@
 <app-navbar></app-navbar>
+<app-carousel [timing]=5000 [auto]='{ enable: true, timer: 5000}' [showControls]='showCarouselControls' (mouseenter)="onCarouselEnter()" (mouseleave)="onCarouselLeave()">
+    <ng-container *ngFor="let item of images;">
+        <ng-container *carouselItem>
+            <img class="image" [src]="item.image" [alt]="item.alt" />
+        </ng-container>
+    </ng-container>
+</app-carousel>

@@ -1,0 +1,13 @@
+<div class="carousel-wrapper">
+    <div class="carousel">
+        <div *ngFor="let item of items;" class="carousel-item" [ngStyle]="transition()">
+            <ng-container [ngTemplateOutlet]="item.tpl"></ng-container>
+        </div>
+    </div>
+</div>
+<button *ngIf="showControls" mat-flat-button (click)="moveNext()" class="carousel__button--prev">
+    <mat-icon>arrow_left</mat-icon>
+</button>
+<button *ngIf="showControls" mat-flat-button (click)="movePrev()" class="carousel__button--next">
+    <mat-icon>arrow_right</mat-icon>
+</button>

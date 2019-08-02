@@ -1,0 +1,19 @@
+.image {
+    width: 100%;
+}
+
+:host {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 5% auto 5%;
+}
+
+:host app-navbar {
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+
+:host app-carousel {
+    grid-row-start: 2;
+    grid-column-start: 1;
+}

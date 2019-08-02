@@ -5,17 +5,19 @@ import { AppComponent } from './app.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { NavbarComponent } from './src/components/navbar/navbar.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 import { MatMenuModule } from '@angular/material/menu';
-import { CarouselComponent } from './src/components/carousel/carousel.component';
-
-
+import { CarouselComponent } from './components/carousel/carousel.component';
+import { CarouselItemDirective } from './components/carousel/directives/carousel-item/carousel-item.directive';
+import { CarouselItemElement } from './components/carousel/directives/carousel-item-element/carousel-item-element.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    CarouselComponent
+    CarouselComponent,
+    CarouselItemDirective,
+    CarouselItemElement,
   ],
   imports: [
     BrowserModule,

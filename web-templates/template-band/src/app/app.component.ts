@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-// import { NavbarComponent } from './src/components/navbar/navbar.component';
 
 @Component({
   selector: 'app-root',
@@ -8,4 +7,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'template-band';
+  showCarouselControls: boolean = true;
+  images = [
+    { image: '../../../assets/carousel-concert/concert1.jpg', alt: 'concert1' },
+    { image: '../../../assets/carousel-concert/concert2.jpg', alt: 'concert2' },
+    { image: '../../../assets/carousel-concert/concert3.jpg', alt: 'concert3' },
+    { image: '../../../assets/carousel-concert/concert4.jpg', alt: 'concert4' },
+  ]
+
+  onCarouselEnter(){
+    this.showCarouselControls = true;
+  }
+
+  onCarouselLeave(){
+    this.showCarouselControls = false;
+  }
 }
