@@ -1,7 +1,6 @@
 import { Component, AfterViewInit, QueryList, ContentChildren, ViewChildren, ElementRef, ViewChild, Input, ViewContainerRef } from '@angular/core';
-import { CarouselItemDirective } from 'src/app/directives/carousel-item.directive';
-import { CarouselItemElement } from 'src/app/directives/carousel-item-element.directive';
-import { AnimationPlayer, AnimationFactory, animate, style, AnimationBuilder } from '@angular/animations';
+import { CarouselItemDirective } from './directives/carousel-item/carousel-item.directive';
+import { CarouselItemElement } from './directives/carousel-item-element/carousel-item-element.directive';
 
 @Component({
   selector: 'app-carousel',

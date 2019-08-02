@@ -1,0 +1,14 @@
+h2 {
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: normal;
+    font-size: 28px;
+}
+
+p {
+    font-style: italic;
+    color: #999;
+}
+
+h2, p {
+    text-align: center;
+}
