@@ -11,6 +11,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { CarouselItemDirective } from './components/carousel/directives/carousel-item/carousel-item.directive';
 import { CarouselItemElement } from './components/carousel/directives/carousel-item-element/carousel-item-element.directive';
 import { BandComponent } from './components/band/band.component';
+import { SectionComponent } from './components/section/section.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { BandComponent } from './components/band/band.component';
     CarouselItemDirective,
     CarouselItemElement,
     BandComponent,
+    SectionComponent,
   ],
   imports: [
     BrowserModule,
