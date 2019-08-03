@@ -2,13 +2,13 @@
   width: 100%;
 }
 
-.band-container {
+.container {
   max-width: 768px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.band-container .band-text {
+.container .band-text {
   text-align: justify;
   text-justify: inter-word;
 }
@@ -21,7 +21,7 @@
 }
 
 .band-members app-band-member {
-  width: 30%;
+  width: 20%;
 }
 
 :host {
@@ -41,7 +41,7 @@
 }
 
 @media (max-width: 768px) {
-  .band-container {
+  .container {
     margin-left: 16px;
     margin-right: 16px;
   }

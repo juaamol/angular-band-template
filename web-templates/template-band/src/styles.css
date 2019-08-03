@@ -10,3 +10,7 @@ body {
     height: 100vh;
     font-family: "Lato", sans-serif;
 }
+
+div.mat-chip-list-wrapper {
+    justify-content: end;
+}
