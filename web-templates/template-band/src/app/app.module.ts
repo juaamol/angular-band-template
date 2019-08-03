@@ -16,7 +16,8 @@ import { BookingInfoComponent } from "./components/booking-info/booking-info.com
 import { MatTableModule } from "@angular/material/table";
 import { MatChipsModule } from "@angular/material/chips";
 import { MatRippleModule } from "@angular/material/core";
-import { BookingCardComponent } from './components/booking-card/booking-card.component';
+import { BookingCardComponent } from "./components/booking-card/booking-card.component";
+import { MatCardModule } from "@angular/material/card";
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { BookingCardComponent } from './components/booking-card/booking-card.com
     MatTableModule,
     MatChipsModule,
     MatRippleModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

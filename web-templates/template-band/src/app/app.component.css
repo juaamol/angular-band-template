@@ -13,15 +13,21 @@
   text-justify: inter-word;
 }
 
-.band-members {
+.band-members, .bookings {
   display: flex;
   flex-wrap: wrap;
   margin-top: 48px;
   justify-content: space-around;
+  align-items: flex-end;
 }
 
 .band-members app-band-member {
   width: 20%;
+}
+
+.bookings app-booking-card {
+  display: block;
+  width: 30%;
 }
 
 :host {
@@ -47,8 +53,16 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 580px) {
   .band-members app-band-member {
     width: 75%;
+  }
+
+  .bookings app-booking-card {
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 32px;
   }
 }

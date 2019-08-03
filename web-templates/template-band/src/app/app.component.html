@@ -45,13 +45,27 @@
 
 <section class="dark">
   <app-section title="TOUR DATES" subtitle="Remember to book your tickets!">
-    <br/>
-    <div class="container"><app-booking-info></app-booking-info></div>
+    <br />
+    <div class="container">
+      <app-booking-info></app-booking-info>
+      <div class="bookings">
+        <ng-container *ngFor="let booking of bookings">
+          <app-booking-card
+            [src]="booking.image"
+            [title]="booking.place"
+            [subtitle]="booking.date"
+            [buttonText]="booking.buyText"
+            [content]="booking.description"
+          >
+          </app-booking-card>
+        </ng-container>
+      </div>
+    </div>
   </app-section>
 </section>
 
 <section>
   <app-section title="CONTACT" subtitle="Fan? Drop a note!">
-    <div>Hello</div>
+    <div class="container"></div>
   </app-section>
 </section>
