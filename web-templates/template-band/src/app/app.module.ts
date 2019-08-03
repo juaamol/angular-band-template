@@ -18,6 +18,7 @@ import { MatChipsModule } from "@angular/material/chips";
 import { MatRippleModule } from "@angular/material/core";
 import { BookingCardComponent } from "./components/booking-card/booking-card.component";
 import { MatCardModule } from "@angular/material/card";
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { MatCardModule } from "@angular/material/card";
     SectionComponent,
     BookingInfoComponent,
     BookingCardComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
