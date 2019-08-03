@@ -10,7 +10,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { CarouselItemDirective } from './components/carousel/directives/carousel-item/carousel-item.directive';
 import { CarouselItemElement } from './components/carousel/directives/carousel-item-element/carousel-item-element.directive';
-import { BandComponent } from './components/band/band.component';
+import { BandMemberComponent } from './components/band-member/band-member.component';
 import { SectionComponent } from './components/section/section.component';
 
 @NgModule({
@@ -20,7 +20,7 @@ import { SectionComponent } from './components/section/section.component';
     CarouselComponent,
     CarouselItemDirective,
     CarouselItemElement,
-    BandComponent,
+    BandMemberComponent,
     SectionComponent,
   ],
   imports: [
