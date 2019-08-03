@@ -1,5 +1,10 @@
-mat-card-actions, p {
-  margin-left: 16px;
+mat-card-actions,
+p {
+  margin-left: 0px;
+}
+
+mat-card-header {
+  margin-left: -16px;
 }
 
 button {
@@ -12,9 +17,17 @@ button:hover {
   color: black;
 }
 
+mat-card,
+button {
+  border-radius: 0px;
+}
 
 img:hover {
-    -webkit-filter: brightness(75%);
+  -webkit-filter: brightness(75%);
+}
+
+.mat-card > .mat-card-actions:last-child {
+  margin-bottom: 0px;
 }
 
 :host {
