@@ -12,6 +12,7 @@ import { CarouselItemDirective } from './components/carousel/directives/carousel
 import { CarouselItemElement } from './components/carousel/directives/carousel-item-element/carousel-item-element.directive';
 import { BandMemberComponent } from './components/band-member/band-member.component';
 import { SectionComponent } from './components/section/section.component';
+import { BookingInfoComponent } from './components/booking-info/booking-info.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { SectionComponent } from './components/section/section.component';
     CarouselItemElement,
     BandMemberComponent,
     SectionComponent,
+    BookingInfoComponent,
   ],
   imports: [
     BrowserModule,
