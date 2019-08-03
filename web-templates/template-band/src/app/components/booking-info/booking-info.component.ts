@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, Input } from "@angular/core";
 
 export interface Booking {
   status: string;
@@ -21,7 +21,7 @@ const BOOKING_DATA: Booking[] = [
 export class BookingInfoComponent implements OnInit {
   displayedColumns: string[] = ["month", "status", "numTickets"];
   dataSource = BOOKING_DATA;
-  rippleColor = 'rgba(171, 166, 166, 0.5)';
+  @Input() rippleColor = 'rgba(171, 166, 166, 0.5)';
 
   constructor() {}
 
