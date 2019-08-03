@@ -1,19 +1,25 @@
 .image {
-    width: 100%;
+  width: 100%;
+}
+
+.band-text {
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 :host {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 5% auto 5%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 5% auto 5%;
 }
 
 :host app-navbar {
-    grid-row-start: 1;
-    grid-column-start: 1;
+  grid-row-start: 1;
+  grid-column-start: 1;
 }
 
 :host app-carousel {
-    grid-row-start: 2;
-    grid-column-start: 1;
+  grid-row-start: 2;
+  grid-column-start: 1;
 }

@@ -12,3 +12,17 @@ p {
 h2, p {
     text-align: center;
 }
+
+:host {
+    display: block;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+:host-context(.dark) {
+    background-color: #000;
+}
+
+:host-context(.dark) h2 {
+    color: #fff;
+}
