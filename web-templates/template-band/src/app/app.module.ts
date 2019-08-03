@@ -18,7 +18,10 @@ import { MatChipsModule } from "@angular/material/chips";
 import { MatRippleModule } from "@angular/material/core";
 import { BookingCardComponent } from "./components/booking-card/booking-card.component";
 import { MatCardModule } from "@angular/material/card";
-import { ContactComponent } from './components/contact/contact.component';
+import { ContactComponent } from "./components/contact/contact.component";
+import { MatFormFieldModule } from "@angular/material/form-field";
+import { MatInputModule } from "@angular/material/input";
+import { ReactiveFormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -44,6 +47,9 @@ import { ContactComponent } from './components/contact/contact.component';
     MatChipsModule,
     MatRippleModule,
     MatCardModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

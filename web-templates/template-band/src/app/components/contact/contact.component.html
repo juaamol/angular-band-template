@@ -1,1 +1,35 @@
-<p>contact works!</p>
+<div class="contact-info">
+  <div *ngFor="let contactInfo of information" class="contact">
+    <mat-icon>{{ contactInfo.icon }}</mat-icon>
+    {{ contactInfo.info }}
+  </div>
+</div>
+<div class="form">
+  <div class="form__inputs">
+    <mat-form-field>
+      <input
+        matInput
+        type="text"
+        [formControl]="name"
+        placeholder="Name"
+        required
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        type="text"
+        [formControl]="mail"
+        placeholder="Mail"
+        required
+      />
+    </mat-form-field>
+  </div>
+  <mat-form-field>
+    <textarea matInput placeholder="Message" required>
+            Hello 
+            Text
+            Area
+    </textarea>
+  </mat-form-field>
+</div>
