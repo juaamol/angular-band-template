@@ -15,6 +15,12 @@ export class AppComponent {
     { image: '../../../assets/carousel-concert/concert4.jpg', alt: 'concert4' },
   ]
 
+  bandMembers = [
+    { name: 'John Doe', image: 'assets/band-members/band-member1.jpg', alt: 'band-member 1'},
+    { name: 'Paul Mc', image: 'assets/band-members/band-member2.jpg', alt: 'band-member 2'},
+    { name: 'Ringo asterisk', image: 'assets/band-members/band-member3.jpg', alt: 'band-member 3'},
+  ]
+
   onCarouselEnter(){
     this.showCarouselControls = true;
   }

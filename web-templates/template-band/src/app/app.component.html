@@ -14,7 +14,8 @@
 </app-carousel>
 <section>
   <app-section title="THE BAND" subtitle="We love music">
-    <div class="band-text">
+    <div class="band-container">
+      <div class="band-text">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quis
       vel et deleniti necessitatibus quasi autem est corrupti, commodi, qui
       reiciendis? Necessitatibus a itaque, delectus suscipit recusandae eum quis
@@ -27,6 +28,12 @@
       nesciunt magnam officiis eum, facere, natus incidunt. Laborum beatae
       consectetur praesentium?
     </div>
+    <div class="band-members">
+      <ng-container *ngFor="let member of bandMembers">
+      <app-band-member [name]="member.name" [src]="member.image" [alt]="member.alt"></app-band-member>
+    </ng-container>
+    </div>
+  </div>
   </app-section>
 </section>
 <section class="dark">

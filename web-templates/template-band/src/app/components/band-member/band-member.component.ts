@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-band-member',
@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BandMemberComponent implements OnInit {
 
+  @Input() src: string;
+  @Input() alt: string;
+  @Input() name: string;
+  
   constructor() { }
 
   ngOnInit() {

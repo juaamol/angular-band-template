@@ -2,10 +2,26 @@
   width: 100%;
 }
 
-.band-text {
+.band-container {
   max-width: 768px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.band-container .band-text {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.band-members {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 48px;
+  justify-content: space-around;
+}
+
+.band-members app-band-member {
+  width: 30%;
 }
 
 :host {
@@ -22,4 +38,17 @@
 :host app-carousel {
   grid-row-start: 2;
   grid-column-start: 1;
+}
+
+@media (max-width: 768px) {
+  .band-container {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
+
+@media (max-width: 450px) {
+  .band-members app-band-member {
+    width: 75%;
+  }
 }
