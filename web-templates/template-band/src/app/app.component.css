@@ -21,13 +21,21 @@
   align-items: flex-end;
 }
 
+.band-members {
+  justify-content: space-around;
+}
+
+.bookings {
+  justify-content: space-between;
+}
+
 .band-members app-band-member {
   width: 20%;
 }
 
 .bookings app-booking-card {
   display: block;
-  width: 30%;
+  width: 31.7%;
 }
 
 :host {
