@@ -141,3 +141,9 @@ img.map {
 .social-media-container a {
   color: #666;
 }
+
+@media (max-width: 589px) {
+  .slide .caption {
+    display: none;
+  }
+}
