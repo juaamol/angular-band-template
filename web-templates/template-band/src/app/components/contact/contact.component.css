@@ -2,6 +2,10 @@ mat-icon {
   margin-right: 12px;
 }
 
+button {
+  float: right;
+}
+
 .contact {
   display: flex;
 }
@@ -41,6 +45,6 @@ mat-icon {
   }
 
   :host {
-      flex-direction: row;
+    flex-direction: row;
   }
 }

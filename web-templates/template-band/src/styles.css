@@ -3,14 +3,28 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 html,
 body {
-    margin: 0;
+  margin: 0;
 }
 
 body {
-    height: 100vh;
-    font-family: "Lato", sans-serif;
+  height: 100vh;
+  font-family: "Lato", sans-serif;
 }
 
 div.mat-chip-list-wrapper {
-    justify-content: end;
+  justify-content: end;
+}
+
+button.dark-btn {
+  background-color: #000;
+  color: white;
+}
+
+button.dark-btn:hover {
+  background-color: #ccc;
+  color: black;
+}
+
+button.dark-btn {
+  border-radius: 0px;
 }

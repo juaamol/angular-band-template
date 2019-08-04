@@ -10,6 +10,8 @@ export class ContactComponent implements OnInit {
 
   name = new FormControl('');
   mail = new FormControl('');
+  message = new FormControl('');
+  
   information = [
     { icon: 'place', info: 'Chicago, US'},
     { icon: 'local_phone', info: 'Phone: +00 151515'},
