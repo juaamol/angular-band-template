@@ -1,15 +1,17 @@
 <app-navbar></app-navbar>
 
-<app-carousel
-  [timing]="5000"
-  [auto]="{ enable: true, timer: 5000 }"
-  [showControls]="showCarouselControls"
-  (mouseenter)="onCarouselEnter()"
-  (mouseleave)="onCarouselLeave()"
->
-  <ng-container *ngFor="let item of images">
+<app-carousel [timing]="5000" [auto]="{ enable: true, timer: 5000 }">
+  <ng-container *ngFor="let item of slides">
     <ng-container *carouselItem>
-      <img class="image" [src]="item.image" [alt]="item.alt" />
+      <div class="slide">
+        <img class="image" [src]="item.image" [alt]="item.alt" />
+        <div class="caption">
+          <h2>
+            {{ item.title }}
+          </h2>
+          <h3>{{ item.subtitle }}</h3>
+        </div>
+      </div>
     </ng-container>
   </ng-container>
 </app-carousel>
@@ -68,6 +70,33 @@
   <app-section title="CONTACT" subtitle="Fan? Drop a note!">
     <div class="container">
       <app-contact></app-contact>
+    </div>
+  </app-section>
+</section>
+
+<section>
+  <img class="map" [src]="map" />
+</section>
+
+<section>
+  <app-section>
+    <div class="social-media-container">
+      <div class="social-media">
+        <div>
+          <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+        </div>
+        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="#" class="google"><i class="fa fa-google"></i></a>
+        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+      </div>
+      <p>
+        Angular version of
+        <a
+          href="https://www.w3schools.com/w3css/tryw3css_templates_band.htm#band"
+          >w3.css: The band</a
+        >
+      </p>
     </div>
   </app-section>
 </section>

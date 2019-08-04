@@ -7,12 +7,11 @@ import { Component } from "@angular/core";
 })
 export class AppComponent {
   title = "template-band";
-  showCarouselControls: boolean = true;
-  images = [
-    { image: "../../../assets/carousel-concert/concert1.jpg", alt: "concert1" },
-    { image: "../../../assets/carousel-concert/concert2.jpg", alt: "concert2" },
-    { image: "../../../assets/carousel-concert/concert3.jpg", alt: "concert3" },
-    { image: "../../../assets/carousel-concert/concert4.jpg", alt: "concert4" },
+  slides = [
+    { image: "../../../assets/carousel-concert/concert1.jpg", alt: "concert1", title: "Paris", subtitle: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit' },
+    { image: "../../../assets/carousel-concert/concert2.jpg", alt: "concert2", title: "Chigago", subtitle: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit' },
+    { image: "../../../assets/carousel-concert/concert3.jpg", alt: "concert3", title: "San Francisco", subtitle: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit' },
+    { image: "../../../assets/carousel-concert/concert4.jpg", alt: "concert4", title: "Paris", subtitle: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit' },
   ];
 
   bandMembers = [
@@ -60,11 +59,5 @@ export class AppComponent {
     },
   ];
 
-  onCarouselEnter() {
-    this.showCarouselControls = true;
-  }
-
-  onCarouselLeave() {
-    this.showCarouselControls = false;
-  }
+  map = 'assets/maps/map1.jpg'
 }

@@ -1,5 +1,9 @@
 .icon {
-    padding: 0 14px;
+    padding: 12px 14px;
+}
+
+.icon:hover {
+    background-color: #f44336;
 }
 
 .fill-space {
@@ -11,9 +15,15 @@ mat-toolbar {
     color: #fff;
 }
 
+.mat-toolbar-row, .mat-toolbar-single-row {
+    height: 48px;
+    padding: 0;
+}
+
 mat-toolbar a {
+    font-size: 16px;
     text-align: center;
-    padding: 12px 24px;
+    padding: 8px 24px;
     box-sizing: border-box;
     cursor: default;
 }

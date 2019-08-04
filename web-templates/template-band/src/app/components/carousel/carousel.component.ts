@@ -14,7 +14,7 @@ export class CarouselComponent implements AfterViewInit {
   @ContentChildren(CarouselItemDirective) items: QueryList<CarouselItemDirective>;
   @ViewChildren(CarouselItemElement, { read: ElementRef }) private itemsElements: QueryList<ElementRef>;
   @Input() timing = 500;
-  @Input() showControls = true;
+  @Input() showControls = false;
   @Input() auto: { enable: boolean, timer: number } = { enable: false, timer: 0 };
   private totalItems: number;
   private slide = 0;

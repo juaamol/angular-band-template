@@ -2,6 +2,30 @@
   width: 100%;
 }
 
+img.map {
+  width: 100%;
+  filter: grayscale(50%);
+}
+
+.slide {
+  position: relative;
+}
+
+.slide .caption {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  color: white;
+  margin-bottom: 42px;
+  transform: translate(-50%);
+  text-align: center;
+}
+
+.slide .caption h2 {
+  letter-spacing: 2px;
+  font-weight: normal;
+}
+
 .container {
   max-width: 768px;
   margin-left: auto;
@@ -13,7 +37,8 @@
   text-justify: inter-word;
 }
 
-.band-members, .bookings {
+.band-members,
+.bookings {
   display: flex;
   flex-wrap: wrap;
   margin-top: 48px;
@@ -73,4 +98,46 @@
     margin-right: 0px;
     margin-bottom: 32px;
   }
+}
+
+.social-media-container {
+  opacity: 0.9;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-media a {
+  display: block;
+  text-align: center;
+  padding: 4px;
+  transition: all 0.3s ease;
+  background-color: white;
+  color: #666;
+  font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.social-media a:hover {
+  opacity: 0.8;
+}
+
+.social-media a.facebook {
+  color: white;
+  background-color: #666;
+  padding-left: 8px;
+  padding-right: 2px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.social-media-container p {
+  text-align: center;
+  color: #666;
+}
+
+.social-media-container a {
+  color: #666;
 }
