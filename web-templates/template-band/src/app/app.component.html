@@ -1,102 +1,102 @@
-<app-navbar></app-navbar>
-
-<app-carousel [timing]="5000" [auto]="{ enable: true, timer: 5000 }">
-  <ng-container *ngFor="let item of slides">
-    <ng-container *carouselItem>
-      <div class="slide">
-        <img class="image" [src]="item.image" [alt]="item.alt" />
-        <div class="caption">
-          <h2>
-            {{ item.title }}
-          </h2>
-          <h3>{{ item.subtitle }}</h3>
+<app-navbar>
+  <app-carousel [timing]="5000" [auto]="{ enable: true, timer: 5000 }">
+    <ng-container *ngFor="let item of slides">
+      <ng-container *carouselItem>
+        <div class="slide">
+          <img class="image" [src]="item.image" [alt]="item.alt" />
+          <div class="caption">
+            <h2>
+              {{ item.title }}
+            </h2>
+            <h3>{{ item.subtitle }}</h3>
+          </div>
         </div>
-      </div>
+      </ng-container>
     </ng-container>
-  </ng-container>
-</app-carousel>
+  </app-carousel>
 
-<section>
-  <app-section title="THE BAND" subtitle="We love music">
-    <div class="container">
-      <div class="band-text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-        quis vel et deleniti necessitatibus quasi autem est corrupti, commodi,
-        qui reiciendis? Necessitatibus a itaque, delectus suscipit recusandae
-        eum quis nemo quos provident dicta explicabo doloribus sunt cum porro
-        rerum ad fugit nihil illum ipsum iure laboriosam laudantium officiis
-        amet? Eveniet omnis impedit, obcaecati, temporibus labore quos earum
-        commodi rerum vel quidem sint molestias deserunt eligendi aliquam est
-        laboriosam officia! Nesciunt, sit. Labore iusto beatae omnis odit fuga
-        provident obcaecati quam? Harum voluptatibus laborum non recusandae
-        dolore iusto maiores illo, nesciunt magnam officiis eum, facere, natus
-        incidunt. Laborum beatae consectetur praesentium?
-      </div>
-      <div class="band-members">
-        <ng-container *ngFor="let member of bandMembers">
-          <app-band-member
-            [name]="member.name"
-            [src]="member.image"
-            [alt]="member.alt"
-          ></app-band-member>
-        </ng-container>
-      </div>
-    </div>
-  </app-section>
-</section>
-
-<section class="dark">
-  <app-section title="TOUR DATES" subtitle="Remember to book your tickets!">
-    <br />
-    <div class="container">
-      <app-booking-info></app-booking-info>
-      <div class="bookings">
-        <ng-container *ngFor="let booking of bookings">
-          <app-booking-card
-            [src]="booking.image"
-            [title]="booking.place"
-            [subtitle]="booking.date"
-            [buttonText]="booking.buyText"
-            [content]="booking.description"
-          >
-          </app-booking-card>
-        </ng-container>
-      </div>
-    </div>
-  </app-section>
-</section>
-
-<section>
-  <app-section title="CONTACT" subtitle="Fan? Drop a note!">
-    <div class="container">
-      <app-contact></app-contact>
-    </div>
-  </app-section>
-</section>
-
-<section>
-  <img class="map" [src]="map" />
-</section>
-
-<section>
-  <app-section>
-    <div class="social-media-container">
-      <div class="social-media">
-        <div>
-          <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+  <section>
+    <app-section title="THE BAND" subtitle="We love music">
+      <div class="container">
+        <div class="band-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+          quis vel et deleniti necessitatibus quasi autem est corrupti, commodi,
+          qui reiciendis? Necessitatibus a itaque, delectus suscipit recusandae
+          eum quis nemo quos provident dicta explicabo doloribus sunt cum porro
+          rerum ad fugit nihil illum ipsum iure laboriosam laudantium officiis
+          amet? Eveniet omnis impedit, obcaecati, temporibus labore quos earum
+          commodi rerum vel quidem sint molestias deserunt eligendi aliquam est
+          laboriosam officia! Nesciunt, sit. Labore iusto beatae omnis odit fuga
+          provident obcaecati quam? Harum voluptatibus laborum non recusandae
+          dolore iusto maiores illo, nesciunt magnam officiis eum, facere, natus
+          incidunt. Laborum beatae consectetur praesentium?
         </div>
-        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-        <a href="#" class="google"><i class="fa fa-google"></i></a>
-        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-        <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+        <div class="band-members">
+          <ng-container *ngFor="let member of bandMembers">
+            <app-band-member
+              [name]="member.name"
+              [src]="member.image"
+              [alt]="member.alt"
+            ></app-band-member>
+          </ng-container>
+        </div>
       </div>
-      <p>
-        Angular version of
-        <a
-          href="https://www.w3schools.com/w3css/tryw3css_templates_band.htm#band"
-          >w3.css: The band</a
-        >
-      </p>
-    </div>
-  </app-section>
-</section>
+    </app-section>
+  </section>
+
+  <section class="dark">
+    <app-section title="TOUR DATES" subtitle="Remember to book your tickets!">
+      <br />
+      <div class="container">
+        <app-booking-info></app-booking-info>
+        <div class="bookings">
+          <ng-container *ngFor="let booking of bookings">
+            <app-booking-card
+              [src]="booking.image"
+              [title]="booking.place"
+              [subtitle]="booking.date"
+              [buttonText]="booking.buyText"
+              [content]="booking.description"
+            >
+            </app-booking-card>
+          </ng-container>
+        </div>
+      </div>
+    </app-section>
+  </section>
+
+  <section>
+    <app-section title="CONTACT" subtitle="Fan? Drop a note!">
+      <div class="container">
+        <app-contact></app-contact>
+      </div>
+    </app-section>
+  </section>
+
+  <section>
+    <img class="map" [src]="map" />
+  </section>
+
+  <section>
+    <app-section>
+      <div class="social-media-container">
+        <div class="social-media">
+          <div>
+            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+          </div>
+          <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+          <a href="#" class="google"><i class="fa fa-google"></i></a>
+          <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+          <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+        </div>
+        <p>
+          Angular version of
+          <a
+            href="https://www.w3schools.com/w3css/tryw3css_templates_band.htm#band"
+            >w3.css: The band</a
+          >
+        </p>
+      </div>
+    </app-section>
+  </section>
+</app-navbar>

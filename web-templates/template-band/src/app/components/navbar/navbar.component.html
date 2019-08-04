@@ -1,14 +1,30 @@
 <mat-toolbar>
-    <a class="active">HOME</a>
-    <a>BAND</a>
-    <a>TOUR</a>
-    <a>CONTENT</a>
-    <a [matMenuTriggerFor]="menu">MORE <mat-icon>arrow_drop_down</mat-icon></a>
-    <mat-menu #menu="matMenu">
-        <button mat-menu-item>Merchadise</button>
-        <button mat-menu-item>Extra</button>
-        <button mat-menu-item>Media</button>
-    </mat-menu>
-    <span class="fill-space"></span>
-    <mat-icon class="icon" aria-hidden="false" aria-label="search">search</mat-icon>
+  <a>HOME</a>
+  <a>BAND</a>
+  <a>TOUR</a>
+  <a>CONTENT</a>
+  <a [matMenuTriggerFor]="menu">MORE <mat-icon>arrow_drop_down</mat-icon></a>
+  <mat-menu  #menu="matMenu">
+    <button mat-menu-item>Merchadise</button>
+    <button mat-menu-item>Extra</button>
+    <button mat-menu-item>Media</button>
+  </mat-menu>
+  <span class="fill-space"></span>
+  <mat-icon class="icon" aria-label="search"
+    >search
+    </mat-icon>
+    <mat-icon class="icon" aria-label="menu" (click)="toggleOpen()"
+    >menu
+    </mat-icon>
 </mat-toolbar>
+<mat-sidenav-container>
+  <mat-sidenav mode="over" #sidenav mode="'side'" [(opened)]="opened">
+    <div class="menu">
+      <a class="dark-btn">BAND</a>
+      <a class="dark-btn">TOUR</a>
+      <a class="dark-btn">CONTENT</a>
+      <a class="dark-btn">MERCH</a>
+    </div>
+  </mat-sidenav>
+  <ng-content></ng-content>
+</mat-sidenav-container>

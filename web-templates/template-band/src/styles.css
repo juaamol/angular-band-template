@@ -15,12 +15,12 @@ div.mat-chip-list-wrapper {
   justify-content: end;
 }
 
-button.dark-btn {
+.dark-btn {
   background-color: #000;
   color: white;
 }
 
-button.dark-btn:hover {
+.dark-btn:hover {
   background-color: #ccc;
   color: black;
 }

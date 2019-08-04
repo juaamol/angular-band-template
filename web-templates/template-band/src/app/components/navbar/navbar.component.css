@@ -1,35 +1,74 @@
 .icon {
-    padding: 12px 14px;
+  padding: 12px 14px;
 }
 
 .icon:hover {
-    background-color: #f44336;
+  background-color: #f44336;
 }
 
 .fill-space {
-    flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 mat-toolbar {
-    background-color: #000;
-    color: #fff;
+  background-color: #000;
+  color: #fff;
 }
 
-.mat-toolbar-row, .mat-toolbar-single-row {
-    height: 48px;
-    padding: 0;
+.mat-toolbar-row,
+.mat-toolbar-single-row {
+  height: 48px;
+  padding: 0;
 }
 
-mat-toolbar a {
-    font-size: 16px;
-    text-align: center;
-    padding: 8px 24px;
-    box-sizing: border-box;
-    cursor: default;
+mat-toolbar > *:last-child {
+  display: inline-block;
 }
 
-mat-toolbar a:hover,
-mat-toolbar a.active {
-    background-color: #ccc;
-    color: #000;
+mat-toolbar > *:not(:last-child):not(:first-child):not(.fill-space) {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+
+mat-toolbar a,
+mat-sidenav .menu a {
+  font-size: 16px;
+  text-align: center;
+  padding: 8px 24px;
+  box-sizing: border-box;
+  cursor: default;
+}
+
+mat-sidenav .menu a {
+  width: 100%;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  text-align: left;
+}
+
+mat-sidenav {
+  width: 70%;
+}
+
+.mat-drawer {
+  background-color: #000;
+}
+
+mat-toolbar a:hover {
+  background-color: #ccc;
+  color: #000;
+}
+
+@media (min-width: 590px) {
+  mat-toolbar > *:last-child {
+    display: none;
+  }
+
+  mat-toolbar > *:not(:last-child):not(:first-child):not(.fill-space) {
+    display: inline-block;
+  }
 }

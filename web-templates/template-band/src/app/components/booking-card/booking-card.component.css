@@ -7,16 +7,6 @@ mat-card-header {
   margin-left: -16px;
 }
 
-button.dark-btn {
-  background-color: #000;
-  color: white;
-}
-
-button.dark-btn:hover {
-  background-color: #ccc;
-  color: black;
-}
-
 mat-card {
   border-radius: 0px;
 }
