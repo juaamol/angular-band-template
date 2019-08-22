@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "template-band": {
+    "angular-band-template": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/template-band",
+            "outputPath": "dist/angular-band-template",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -50,18 +50,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "template-band:build"
+            "browserTarget": "angular-band-template:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "template-band:build:production"
+              "browserTarget": "angular-band-template:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "template-band:build"
+            "browserTarget": "angular-band-template:build"
           }
         },
         "test": {
@@ -95,7 +95,7 @@
         }
       }
     },
-    "template-band-e2e": {
+    "angular-band-template-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -103,11 +103,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "template-band:serve"
+            "devServerTarget": "angular-band-template:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "template-band:serve:production"
+              "devServerTarget": "angular-band-template:serve:production"
             }
           }
         },
@@ -123,5 +123,5 @@
       }
     }
   },
-  "defaultProject": "template-band"
+  "defaultProject": "angular-band-template"
 }

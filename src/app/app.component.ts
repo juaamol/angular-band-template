@@ -6,7 +6,7 @@ import { Component } from "@angular/core";
   styleUrls: ["./app.component.css"],
 })
 export class AppComponent {
-  title = "template-band";
+  title = "angular-band-template";
   slides = [
     { image: "../../../assets/carousel-concert/concert1.jpg", alt: "concert1", title: "Paris", subtitle: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit' },
     { image: "../../../assets/carousel-concert/concert2.jpg", alt: "concert2", title: "Chigago", subtitle: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit' },
