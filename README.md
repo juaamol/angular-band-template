@@ -1,4 +1,4 @@
-# TemplateBand
+# Angular Band template
 
 This project consists in a template for a group band. It is an angular material app based on [The Band](https://www.w3schools.com/bootstrap/trybs_theme_band_full.htm) bootstrap theme from [w3schools](https://www.w3schools.com/).
 
