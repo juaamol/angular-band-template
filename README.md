@@ -28,7 +28,7 @@ To make the content of this app customizable, it has some variables that can be 
 
 * *title* (_string_): Represents the title of the application
 
-* *slides* ([ _Object_]): Contains slides for the carousel. Each slide has 4 fields:
+* *slides* ([_Object_]): Contains slides for the carousel. Each slide has 4 fields:
   * *image* (_string_): Image path.
   * *alt* (_string_): Alternative text shown if the image is not available.
   * *title* (_string_): Title for the image.
@@ -39,7 +39,7 @@ To make the content of this app customizable, it has some variables that can be 
   * *image* (_string_): Band member picture.
   * *alt* (_string_): Alternative text shown if the image is not available.
 
-* *bookings*: 
+* *bookings* ([_Object_]): 
   * *place* (_string_),
   * *description* (_string_): "Praesent tincidunt sed tellus ut rutrum sed vitae justo.",
   * *date* (_string_): Date of the concent.
@@ -59,6 +59,8 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Deploy to github pages
 
+```
 npm install -g angular-cli-ghpages
 build --prod --base-href "https://<user-name>.github.io/<repo>/"
 angular-cli-ghpages --dir dist/angular-band-template
+```
