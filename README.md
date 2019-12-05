@@ -61,6 +61,6 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ```
 npm install -g angular-cli-ghpages
-build --prod --base-href "https://<user-name>.github.io/<repo>/"
+npm run build --prod --base-href "https://<user-name>.github.io/<repo>/"
 angular-cli-ghpages --dir dist/angular-band-template
 ```
